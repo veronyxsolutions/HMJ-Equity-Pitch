@@ -233,11 +233,11 @@ img {
 /* The one bold element: condensed Archivo stacked like a skyline. */
 .hero__title {
   font-family: var(--font-ui);
-  font-weight: 500;
+  font-weight: 400;
   font-stretch: 72%;
-  font-size: min(11.5vw, 19vh);
-  line-height: 0.86;
-  letter-spacing: -0.012em;
+  font-size: min(9.6vw, 16.5vh);
+  line-height: 0.88;
+  letter-spacing: -0.006em;
   color: var(--white);
 }
 
@@ -246,24 +246,29 @@ img {
 }
 
 .hero__lede {
-  max-width: 24em;
-  margin-top: clamp(1.5rem, 3.5vh, 2.5rem);
-  font-size: var(--step-1);
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.78);
+  max-width: 22em;
+  margin-top: clamp(1.75rem, 4vh, 2.5rem);
+  font-size: 1.25rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-top: 2rem;
+  margin-top: clamp(2rem, 4.5vh, 2.75rem);
 }
 
 .hero__visual {
   position: relative;
   min-height: 100%;
-  background: var(--night-panel);
+}
+
+.hero-canvas {
+  /* Fade the scene's left edge into the hero so there is no panel seam. */
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 22%);
+  mask-image: linear-gradient(to right, transparent 0, #000 22%);
 }
 
 .hero-canvas,
@@ -507,7 +512,11 @@ img {
 
   .hero__visual {
     min-height: 0;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 6 / 5;
+  }
+
+  .hero-still {
+    object-position: 50% 85%;
   }
 
   .section__head,

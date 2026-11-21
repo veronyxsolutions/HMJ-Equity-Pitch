@@ -5,14 +5,17 @@ import ErrorBoundary from './ErrorBoundary.jsx';
 // Loaded only when 3D is allowed, so phones never download three.js.
 const HeroCanvas = lazy(() => import('./HeroCanvas.jsx'));
 
+// A rendered frame of the same scene (npm run capture:still), shown when 3D is off.
 function HeroStill() {
   return (
     <img
       className="hero-still"
-      src="/hero-still.svg"
-      alt=""
-      width="800"
-      height="600"
+      src="/hero-still-864.jpg"
+      srcSet="/hero-still-864.jpg 864w, /hero-still-1728.jpg 1728w"
+      sizes="(max-width: 767px) 100vw, 60vw"
+      alt="A seven-storey limestone apartment building at dusk, with lit windows, balconies and a tree-lined street."
+      width="864"
+      height="900"
       decoding="async"
     />
   );
