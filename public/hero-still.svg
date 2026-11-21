@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <!-- Placeholder still for the hero. Replace with a rendered frame of the 3D scene. -->
+  <rect width="800" height="600" fill="#06192A"/>
+  <g fill="#0B2438">
+    <rect x="96" y="250" width="92" height="350"/>
+    <rect x="212" y="150" width="70" height="450"/>
+    <rect x="306" y="300" width="120" height="300"/>
+    <rect x="452" y="90" width="84" height="510"/>
+    <rect x="560" y="210" width="104" height="390"/>
+    <rect x="688" y="330" width="70" height="270"/>
+  </g>
+  <rect x="452" y="90" width="84" height="510" fill="none" stroke="#8F6544" stroke-width="1.5"/>
+</svg>
